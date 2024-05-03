@@ -1,0 +1,377 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lora', serif;
+}
+
+.margin-interno{
+  padding: 0 50px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.padre{
+  display: flex;
+  flex-flow: column nowrap;
+  background:#ffffff;
+}
+
+/*Encabezado*/
+.header{
+  display: flex;
+  flex-flow: column nowrap;
+}
+  .menu{
+      display: flex;
+      flex-flow: row nowrap;
+      height: 180px;
+      align-items: center;
+      padding: 50px;
+  }
+  .logo{
+      flex: -1 1 auto;
+      margin: 120px ;
+  }
+  .logo img{
+      width: 150px;
+      height: 150px;
+  }
+  .nombrepg{
+      
+      flex: 8 1 auto;
+      margin: -90px;
+  }
+  .title{
+      color: #000;
+      font-size: 65px;
+      font-family: 'Dancing Script', cursive;
+
+  }
+  .title2{
+      color: #535353;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+  }
+
+/*Cajita de pedidos de whatsapp*/
+.pedidos{        
+  flex: 5 1 auto;
+  display: flex;
+}
+  .caja {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #6c5a20;
+      padding: 8px;
+      border-radius: 5px;
+      width: 280px;
+      position: fixed;
+  }
+  .caja:hover {
+      background-color: #6c5a20;
+  }
+  .enlace {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+  }
+  .icono {
+      font-size: 24px;
+      margin-right: 10px;
+  }
+  .aqui {
+      font-size: 18px;
+  }
+
+/*Barra de menú*/     
+.nav{
+  background: #000000;
+  height: 65px;
+  text-align: center;
+  text-justify: center;
+  padding: 21px 0;
+}
+  .nav a{
+      color: #ffffff;
+      font-size: 15px;
+      text-transform: uppercase;
+      padding: 0 15px; 
+      letter-spacing: 2px;
+  }
+      .nav a:hover{
+          color: #CE4676	;
+      }
+      .icono-menu {
+          font-size: 24px;
+          cursor: pointer;
+          color: white;
+          display: none;
+        }
+
+/*Navegacion de productos*/
+.navegacion{
+  margin: 20px 40px 50px 40px;
+  text-align: right;
+}
+  .navegacion a{
+      color:#000;
+      font-weight: bold;
+      font-size: 13px;
+      padding: 0 10px;
+      letter-spacing: 2px;
+  }
+  .navegacion a:hover{
+      color: #CE4676	;
+  }
+  .actual{
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 5px;
+  }
+
+/*catalogo de productos*/
+.accesorios {
+  width: 100%;
+  display: flex;
+  max-width: 1280px;
+  height: 480px;
+  justify-content: center;
+  margin: 10px auto;
+}
+  .cardaccesorios {
+      width: 1200px; 
+      height: 450px;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease;
+  }
+  .cardaccesorios:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3%);
+  }
+  .cardaccesorios img {
+      width: 100%;
+      height: 325px; 
+      max-height: 340px; 
+  }
+  .cardaccesorios .contenidoaccesorios {
+      padding: 15px;
+      text-align: center;
+  }
+  .cardaccesorios .contenidoaccesorios p {
+      line-height: 1.5;
+      color: #6a6a6a;
+      font-size: 15px;
+  }
+
+/*Formas de envio*/
+.formaenvio{
+  flex-flow: column nowrap;
+}
+  .entregas{
+      display: flex;
+      flex-flow: row nowrap;
+      height: 200px;
+      align-items: center;
+      padding: 50px;
+      background: #D4D4D4;
+      margin: 10px auto;
+  }
+  .logocarro{
+      flex: 1 1 auto;
+      margin: 120px; 
+      color: #000;
+      font-size: 45px;
+  }
+  .lugarenvios{
+      flex: 5 1 auto;
+      margin: -8px;
+  }
+  .tilugar{
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      color: #D4AF37;
+      font-size: 23px;
+  }
+  .nomlugar{
+      flex: 80 1 auto;
+      margin: 180px ;
+      
+  }
+  .tipagos{
+      color: #000000;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+  }
+
+/*Targeta donde muestra las categorias de los productos*/
+.categoria {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px auto;
+}
+  .targeta {
+      width: calc(25% - 30px); 
+      max-width: 160px;
+      height: 260px;
+      border-radius: 20px;
+      box-shadow: 0 0 6px 0 #000000;
+      overflow: hidden;
+      margin: 15px;
+      text-align: center;
+      transition: all 0.25s;
+  }
+  .targeta:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 0 6px 0 #000000;
+  }
+  .targeta img {
+      width: 100%;
+      height: 200px; 
+      max-height: 200px; 
+  }
+  .targeta h4 {
+      font-size: 15px;
+  }
+  .targeta a {
+      font-weight: 500;
+      text-decoration: none;
+      color: black;
+  }
+
+/*Pie de pagina*/
+.footer{
+  background: #000;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+  .pie{
+      text-align: center;
+  }
+  .pie p{
+      color: #fff;
+      font-size: 11px;
+      text-transform: uppercase;
+      padding: 0 10px;
+      letter-spacing: 2px;
+      margin: 18px 0 0 0 ; 
+  }
+
+@media all and (min-width: 100px) and (max-width: 1200px) {
+  .menu {
+      flex-flow: column nowrap;
+      height: auto;
+      padding: 2% 5%;
+  }
+      .logo {
+          margin: 2% 0;
+      }
+      .nombrepg {
+          margin: 0;
+      }
+      .title {
+          font-size: 6vw;
+      }
+      .title2 {
+          font-size: 2vw;
+      }
+
+  .caja {
+      width: 80px; 
+      top: 10px; 
+      right: 10px; 
+  }
+      .enlace .aqui {
+          display: none;
+      }
+      .icono {
+          margin-right: 0;
+          font-size: 20px;
+      }
+
+  .accesorios{
+      max-height: 350px;
+  }
+      .cardaccesorios {
+          width: calc(33.333% - 30px);
+          height: 320px;
+      }
+      .cardaccesorios:hover {
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          transform: translateY(-3%);
+      }
+      .cardaccesorios img {
+          width: 100%;
+          height: 200px;
+          max-height: 340px;
+      }
+      .cardaccesorios .contenidoaccesorios {
+          padding: 15px;
+          text-align: center;
+      }
+      .cardaccesorios .contenidoaccesorios p {
+          line-height: 1.5;
+          color: #6a6a6a;
+          font-size: 15px;
+      }
+}
+
+@media all and (max-width: 650px) {
+  .icono-menu {
+      display: block;
+  }
+      .opciones {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 295px;
+        left: 0;
+        width: 100%;
+        background: #000000;
+      }
+      .opciones.show {
+        display: flex;
+      }
+      .nav a {
+        padding: 10px 15px;
+      }
+}
+
+@media all and (min-width: 100px) and (max-width: 830px) {
+  .entregas {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+    .logocarro {
+      display: none;
+    }
+    .lugarenvios {
+      text-align: center;
+    }
+    .tilugar{
+      margin-bottom: 10px;
+    }
+    .nomlugar {
+      margin: 0; 
+    }
+}
